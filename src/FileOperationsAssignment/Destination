@@ -1,0 +1,19 @@
+Generics
+Completed: Implemented classes, Interfaces, methods and constructors as Genetic type.
+Key Learnings: I learned how generic promotes generalization in the code by allowing the creation of type-independent classes, interfaces, and methods.
+Questions or confusions: none.
+
+Wildcards
+Completed:  Implemented program for practicing wildcards on method arguments and class definitions also bounded it with upper bound and lower bound.
+Key Learnings: Learned how we can make code more flexible and dynamic by letting the type be specified later or be more loosely defined.
+Questions or confusions: none.
+
+File reading with Scanner
+Completed:  Studied File class and performed program to read the content as a stream of token of text file with File class.
+Key Learnings: Scanner class in java reads input from various sources including files, string, input streams. It provides various methods for reading data such as nextLine(), nextInt(), nextDouble().
+Questions or confusions: none.
+
+Reading files with Files Reader
+Completed: Studied about FileReader and BufferReader and performed program for reading csv file.
+Key Learnings: FileReader class in java used to read the content as the stream of character. FileReader is used when we need to perform character encoding as it reads the file character by character .
+Questions or confusions: none.
