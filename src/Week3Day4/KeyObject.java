@@ -1,7 +1,12 @@
 package Week3Day4;
 
+//import Week3Day5.Date;
+//import Week3Day5.Flight;
+
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 class Route{
     String source;
@@ -46,16 +51,29 @@ public class KeyObject {
     }
     public static void main(String[] args){
 
-        Map<Route,Integer> map = new HashMap<>();
-
-        map.put(new Route("jaipur","delhi"),10);
-         map.put(new Route("jaipur","delhi"),10);
-         map.put(new Route("delhi","mumbai"),20);
-         System.out.println(map);
-
-         addPassenger(map,new Route("jaipur","delhi"));
+        Set<Route> set = new HashSet<>();
+        set.add(new Route("jaipur","delhi"));
+        set.add(new Route("jaipur","bhiwani"));
+        set.add(new Route("bhiwani","jaipur"));
+        System.out.println(set);
 
 
+        Map<Set<Route>,Integer> map = new HashMap<>();
 
+
+//        map.put(new Route("jaipur","delhi"),10);
+//         map.put(new Route("jaipur","delhi"),10);
+//         map.put(new Route("delhi","mumbai"),20);
+//         System.out.println(map);
+//
+//         addPassenger(map,new Route("jaipur","delhi"));
+
+        map.put(set,1);
+        System.out.println(map);
+
+
+//        map.put(new Date(1,12,27),new Flight("jaipur","delhi"));
+//        map.put(new Date(18,11,25),new Flight("jaipur","Mumbai"));
+//        map.put(new Date(8,11,25),new Flight("Banglore","delhi"));
     }
 }
